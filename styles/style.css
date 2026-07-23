@@ -3,6 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--page-bg-image);
+  font-family: var(--main-font);
   background-position: center;
   background-attachment: fixed;
   background-color:  var(--bg-color);
@@ -75,7 +76,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid currentColor;
+  border: 1px solid var(--decor-color);
   pointer-events: none;
 }
 
@@ -89,7 +90,7 @@
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-bottom-color: currentColor;
+  border-bottom-color: 1px solid currentColor;
 }
 
 .rec {
@@ -119,7 +120,6 @@
   font-size: var(--header-title-size);
   line-height: 83%;
   text-shadow: 4px 4px 0 var(--accent-color);
-  margin-left: -10px;
 }
 
 .header__description {
@@ -156,6 +156,7 @@
 
 .card__title {
   font-weight: 700;
+  color: var(--title-decor-color);
 }
 
 .card__subtitle {
@@ -195,7 +196,7 @@
 .gallery__image {
   display: block;
   width: 100%;
-  object-fit: cover;
+  height: auto;
 }
 
 .footer {
@@ -243,7 +244,7 @@
   .header__title,
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-left: -10px;
+    margin-left: -20px;
 }
 
   .header__description {
@@ -267,15 +268,12 @@
   .gallery {
     display: grid;
     gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .gallery__title {
     color: var(--title-decor-color);
     grid-column: 1 / -1;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .gallery__image {

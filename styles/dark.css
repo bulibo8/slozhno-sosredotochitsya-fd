@@ -16,5 +16,5 @@
   --title-decor-color: #000028;
   --text-color: #F1B2CE;
   --decor-color: #ff0070;
-  --page-bg-image: url('/images/cover-image-dark.png');
+  --page-bg-image: url('../images/cover-image-dark.png');
 }

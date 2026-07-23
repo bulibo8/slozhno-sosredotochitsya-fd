@@ -16,7 +16,7 @@
   --text-color: #353430;
   --title-color: #ffc2e6;
   --title-decor-color: #353430;
-  --page-bg-image: url('/images/cover-image-light.png');
+  --page-bg-image: url('../images/cover-image-light.png');
 }
 
 @media (prefers-color-scheme: light) {
@@ -30,8 +30,11 @@
     --text-color: #353430;
     --page-bg-image: url("../images/cover-image-light.png");
   }
-
-  :root.theme-light .rec {
+  .rec {
     display: none;
   }
 }
+
+:root.theme-light .rec {
+    display: none;
+  }
