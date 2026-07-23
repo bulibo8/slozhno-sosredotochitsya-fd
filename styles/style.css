@@ -161,6 +161,7 @@
 
 .card__subtitle {
   font-weight: 400;
+  color: var(--title-decor-color);
 }
 
 .card__text {
