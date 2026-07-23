@@ -35,6 +35,6 @@
   }
 }
 
-:root.theme-light .rec {
-    display: none;
-  }
+.theme-light .rec {
+  display: none;
+}
