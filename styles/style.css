@@ -65,7 +65,7 @@
 }
 
 .header__theme-menu-button {
-  border: none;
+  border: 1px solid transparent;
   padding: 1px 13px;
   color: var(--decor-color);
   background-color: transparent;
@@ -77,16 +77,6 @@
 .header__theme-menu-button_active {
   border: 1px solid currentColor;
   pointer-events: none;
-}
-
-.header__theme-menu-button {
-  border: 1px solid transparent;
-  padding: 1px 13px;
-  color: var(--decor-color);
-  background-color: transparent;
-  font: inherit;
-  text-transform: lowercase;
-  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
@@ -252,9 +242,9 @@
 
   .header__title,
   .footer__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-left: -10px;
-  }
+}
 
   .header__description {
     width: 364px;
@@ -331,7 +321,7 @@
 
   .header__title,
   .footer__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
